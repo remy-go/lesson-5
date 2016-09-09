@@ -1,10 +1,5 @@
 function duplicate(array) {
-  var duplicated = [];
-  var length = array.length;
-  for(i = 0; i < length; i++) {
-    duplicated[i] = duplicated[i + length] = array[i];
-  }
-  return duplicated;
+  return array.concat(array);
 }
 
 
